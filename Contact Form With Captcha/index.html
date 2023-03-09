@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Contact Form</title>
+    <script src="script.js"></script>
+</head>
+
+<body onload="generate()">
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="contact-us">
+        <form action="#">
+            <!-- <h1>Contact Us</h1> -->
+            <label for="customerName">Name <em>&#x2a;</em>
+            </label>
+            <input id="customerName" name="customerName" required="" type="text" />
+            <label for="customerEmail">Email <em>&#x2a;</em></label>
+            <input id="customerEmail" name="customerEmail" required="" type="email" />
+            <label for="customerPhone">Phone</label>
+            <input id="customerPhone" name="customerPhone" type="tel" />
+            <label for="Address">Address</label>
+            <input id="Address" name="Address" type="text" />
+            <label for="customerNote">Your Message <em>&#x2a;</em></label>
+            <textarea id="customerNote" name="customerNote" required="" rows="4"></textarea>
+            <div id="captcha-container">
+                <div id="captcha-input" class="inline">
+                    <input type="text" id="submit" placeholder="Captcha code" />
+                </div>
+                <div class="inline" onclick="generate()">
+                    <i class="fas fa-sync"></i>
+                </div>
+                <div id="image" class="inline" selectable="False"></div>
+            </div>
+            <input type="submit" id="btn" required="" onclick="printmsg(event)" value="Send Message" />
+            <p id="key"></p>
+        </form>
+    </div>
+    <footer>
+        <p>&copy; 2023 Contact Form</p>
+    </footer>
+</body>
+
+</html>
