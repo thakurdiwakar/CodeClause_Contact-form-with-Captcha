@@ -1,6 +1,6 @@
 # Contact Form with Captcha
 
-This is a simple project that demonstrates how to create a contact form with captcha using HTML and CSS.
+This is a simple project that demonstrates how to create a contact form with captcha using HTML ,CSS and JavaScript.
 
 ## Getting Started
 
@@ -18,6 +18,7 @@ To run this project, you need a web browser and a text editor.
 
 * HTML
 * CSS
+* JavaScript
 
 ## Authors
 
